@@ -2,7 +2,7 @@ FROM debian:jessie
 
 MAINTAINER Fábio Uechi <fabio.uechi@gmail.com>
 
-RUN apt-get update && apt-get install -y wget
+RUN apt-get install -y wget
 
 RUN wget http://download.ag-projects.com/agp-debian-gpg.key -P /tmp/ && \
     apt-key add /tmp/agp-debian-gpg.key && \
